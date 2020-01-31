@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+        <a href="TextHandler.ashx">Text</a>
+        <a href="ImageHandler.ashx">Image</a>
         </div>
     </form>
 </body>

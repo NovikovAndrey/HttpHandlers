@@ -15,7 +15,7 @@ namespace GenericHandler
         {
             string path = context.Server.MapPath("c#.jpg");
             context.Response.ContentType = "image/jpg";
-            context.Response.Write(path);
+            context.Response.WriteFile(path);
         }
 
         public bool IsReusable
