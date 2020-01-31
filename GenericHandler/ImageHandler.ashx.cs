@@ -13,8 +13,9 @@ namespace GenericHandler
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.ContentType = "text/plain";
-            context.Response.Write("Hello World");
+            string path = context.Server.MapPath("c#.jpg");
+            context.Response.ContentType = "image/jpg";
+            context.Response.Write(path);
         }
 
         public bool IsReusable
